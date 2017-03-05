@@ -36,7 +36,7 @@ CanvasContributionTool(canvas, { //data
     }
   ],
 },{ //config
-  padding_top: (44 - 13) * 2,
+  padding_top: (44 - 13) * 2, //*2 for Retina Display and the tool will automatically set the width and height
   padding_left_right: 100 * 2,
   footer_margin_top: 14 * 2,
   padding_bottom: (44 - 13 + 2) * 2,
