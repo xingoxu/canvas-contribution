@@ -1,7 +1,7 @@
 import merge from 'merge';
 import normalizeColor from './normalize-color.js';
 import { rgba } from './normalize-color.js';
-import moment from 'moment';
+import moment from 'moment/src/moment.js';
 import TWEEN from 'tween.js';
 
 function getLevel(count, max) {

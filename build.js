@@ -68,6 +68,7 @@ var webpackConfig = {
         NODE_ENV: (processEnv == 'dev') ? JSON.stringify('development') : JSON.stringify('production'),
       }
     }),
+    new webpack.ContextReplacementPlugin(/\.\/locale$/, 'empty-module', false, /js$/) //for moment locale not found
   ],
   devtool: (processEnv == 'dev') ? 'source-map' : false,
 };

@@ -1,11 +1,10 @@
 let squareGenerator = require('./Square.js').default;
 let MonthText = require('./month-text.js').default;
 let TWEEN = require('tween.js');
-let moment = require('moment');
+let moment = require('moment/src/moment.js').default;
 let merge = require('merge');
 let MonthTextConfig = require('./month-text.js').MonthTextConfig;
 let FooterText = require('./month-text.js').FooterText;
-
 (function (root, exports) {
   if (typeof define === 'function' && define.amd) {
     define([], () => {
