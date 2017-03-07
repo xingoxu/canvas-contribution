@@ -1,6 +1,6 @@
 {
   "name": "canvas-contribution",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "./src/main.js",
   "description": "generate github contribution or other activities in canvas",
   "repository": {
