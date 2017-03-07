@@ -148,16 +148,14 @@ let FooterText = require('./month-text.js').FooterText;
   footer_y += square_height;
   canvas.height = `${config.padding_bottom + footer_y}`;
 
-  let canvasLeft = canvas.getBoundingClientRect().left;
-  let canvasTop = canvas.getBoundingClientRect().top;
   let timeout = 0;
   let renderTimeout = 0;
   canvas.addEventListener('mousemove', event => {
     clearTimeout(timeout);
     startRender();
     timeout = setTimeout(() => {
-      let x = (event.clientX - canvasLeft) * 2;
-      let y = (event.clientY - canvasTop) * 2;
+      let x = (event.clientX - canvas.getBoundingClientRect().left) * 2;
+      let y = (event.clientY - canvas.getBoundingClientRect().top) * 2;
       let hasOneSquare = false;
       SquareArray.forEach((square, index) => {
         if (square.isInSquare(x, y)) {

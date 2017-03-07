@@ -9,7 +9,8 @@
   },
   "scripts": {
     "dev": "node build.js dev",
-    "build": "node build.js build"
+    "build": "node build.js build",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "canvas",
